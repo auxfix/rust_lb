@@ -9,7 +9,12 @@ fn main() {
 	    .read_line(&mut user_input)
 	    .expect("Could nor read your data, i mean for real");
 
-	let x:i32  = user_input.trim().parse().expect("Input not an integer");
+	let n:i32  = user_input.trim().parse().expect("Input not an integer");
 
-	println! ("We willl be sorting array of size:{}", x);
+	println! ("We willl be sorting array of size:  {}", n);
+
+
+	for _i in 0..n {
+		println!("Ricky ticky tavi")
+	}
 }
