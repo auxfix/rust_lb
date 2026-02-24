@@ -11,5 +11,5 @@ fn main() {
 
 	let x:i32  = user_input.trim().parse().expect("Input not an integer");
 
-	println! ("we willl be sorting array of langth:{}", x);
+	println! ("We willl be sorting array of size:{}", x);
 }
