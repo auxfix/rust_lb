@@ -15,6 +15,6 @@ fn main() {
 
 
 	for _i in 0..n {
-		println!("Ricky ticky tavi")
+		println!("Enter {} element: ", _i);
 	}
 }
