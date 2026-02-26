@@ -2,19 +2,20 @@ use std::io;
 
 
 fn main() {
-	println!("Please enter length of the array, you want to sort: ");	
+	println!("Please enter array you whant us to sort, split characters by comma: ");	
 
 	let mut user_input = String::new();
 	io::stdin()
 	    .read_line(&mut user_input)
 	    .expect("Could nor read your data, i mean for real");
 
-	let n:i32  = user_input.trim().parse().expect("Input not an integer");
+	let array_parts  = user_input.split(",");
 
-	println! ("We willl be sorting array of size:  {}", n);
+	println! ("Here is your array:",);
 
+    array_parts.sort();
 
-	for _i in 0..n {
-		println!("Enter {} element: ", _i);
+	for _i in array_parts {
+		print!("{} ", _i);
 	}
 }
