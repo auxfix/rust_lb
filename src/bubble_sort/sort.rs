@@ -9,7 +9,7 @@ fn main() {
 	    .read_line(&mut user_input)
 	    .expect("Could nor read your data, i mean for real");
 
-	let array_parts  = user_input.split(",");
+	let array_parts: Vec<&u32>  = user_input.split(",").collect();
 
 	println! ("Here is your array:",);
 
